@@ -104,17 +104,14 @@ function checkIfImageExists(url,id) {
    } catch (error) {
     console.log(error);
    } 
-
   } 
   
   
-
+  //function for search filter
   function searchFunction() {
     var input, filter, table, tr, td, i, txtValue;
     input = document.getElementById("search");
-    if(input==''){
-        td.style.backgroundColor="";
-    }
+    
     filter = input.value.toUpperCase();
     table = document.getElementById("filtertable");
     tr = table.getElementsByTagName("tr");
