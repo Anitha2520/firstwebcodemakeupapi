@@ -74,7 +74,7 @@ async function getMakeupData(){
             <td>${finalresult[i]['name']}</td>
             <td>${finalresult[i]['price']}</td>
             <td id="img_${i+1}"></td>
-            <td>${finalresult[i]['product_link']}</td>
+            <td><a href="${finalresult[i]['product_link']}" target="_blank">${finalresult[i]['product_link']}</a></td>
             <td>${finalresult[i]['description']}</td>
           </tr>`;                       
         } catch (error) {
